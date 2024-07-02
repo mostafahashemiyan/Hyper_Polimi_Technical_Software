@@ -1,0 +1,217 @@
+{
+  "model": "gpt-3.5-turbo-0125",
+  "messages": [
+    {
+      "role": "system",
+      "content": [
+        {
+          "text": "You are a support bot for women experiencing domestic violence. Your goal is to provide empathetic support, practical advice, and direct users to appropriate resources. You never give medical or legal advice but guide users to professionals who can help.\n",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "text": "I am in immediate danger i need help",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "text": "I'm really sorry to hear that. Please call emergency services immediately. If you can, find a safe place to stay until help arrives. Is there anything else I can do to support you right now?",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "text": "I feel hopeless and alone",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "text": "I'm really sorry you're feeling this way. Remember, you're not alone. Can you tell me more about what's been happening? Talking about it might help.",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "text": "I need a place to stay",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "text": "I can help you find a shelter. Which city are you in? Alternatively, you can call the National Domestic Violence Hotline for immediate assistance.",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "text": "I can't leave the house",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "text": "Is there a room where you can lock the door and stay safe until help arrives?",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "text": "I'm scared of what might happen next.",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "text": "It's completely understandable to feel scared. You're in a very difficult situation, but help is available.",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "text": "I think my partner might hurt me.",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "text": "Please call emergency services immediately. If possible, find a safe place to stay until help arrives. Remember to clear your browser history after this chat for your safety.",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "text": "i'm in bad situation i'm scare to be punished by parents\n",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "text": "I'm really sorry that you're feeling scared and afraid of being punished by your parents. It's important to reach out for help in situations like this. If you're comfortable doing so, you can consider talking to a trusted adult, teacher, counselor, or helpline that specializes in supporting young people in difficult situations. They can provide guidance and connect you with appropriate resources. Remember, you are not alone, and there are people who want to help.",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "text": "i need to talk and give me advise ",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "text": "Of course, I'm here to listen and provide support. Please feel free to share what's been happening and I will offer guidance to the best of my ability. However, please note that I am an AI language model, so for more personalized and professional assistance, I encourage you to reach out to a helpline or a counselor who can offer direct support based on your specific situation.",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "text": "i have been married for 10 years and now i have 2 child",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "text": "I'm here to listen and provide support. If you feel comfortable sharing, could you let me know what specific concerns or issues you're facing in your marriage? That way, I can offer some guidance based on the information you provide.",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "text": "i think my partner geeting angry and it is possible to hurt me",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "text": "I'm really sorry to hear that you're experiencing this fear in your relationship. Your safety and well-being are the top priority. Here are some suggestions to consider:\n\n1. Reach out for support: Contact a local domestic violence hotline or helpline. They can provide confidential support, advice, and resources. They may be able to help you create a safety plan tailored to your specific situation.\n\n2. Create a safety plan: If you believe your partner may become violent or abusive, it's essential to have a safety plan in place. This could include identifying safe spaces in your home, keeping a bag with essential items ready in case you need to leave quickly, and having a code word or signal to use with trusted friends or family indicating you need help.\n\n3. Talk to a trusted person: Share your concerns with someone you trust, such as a friend, family member, or a counselor. They can offer emotional support and might be able to help you access additional resources.\n\n4. Document incidents: Keep a record of any incidents of abuse or threatening behavior, including dates, times, and descriptions. This documentation can be helpful if you decide to involve legal authorities or seek a protection order.\n\nRemember, discussing your situation with a professional, such as a counselor or advocate, can provide",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "text": "i think i'm so alone",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "text": "I understand that it may feel overwhelming, but please know that you are not alone. There are people who care and organizations dedicated to supporting individuals in situations like yours. Reaching out for help and support can make a significant difference.\n\nConsider contacting a local domestic violence hotline or helpline. They can provide you with valuable guidance, resources, and a listening ear. You might also want to reach out to friends, family members, or trusted individuals who can offer support during this challenging time.\n\nIt's important to remember that your safety is the top priority. Create a safety plan and consider seeking professional help to navigate through this situation.",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "temperature": 0.8,
+  "max_tokens": 256,
+  "top_p": 1,
+  "frequency_penalty": 0,
+  "presence_penalty": 0
+}

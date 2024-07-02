@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* add css class to animation with ease-in-out and duration 300ms */
+@layer utilities {
+  .animate-item {
+    transition: all 300ms ease-in-out;
+  }
+}
+
+body {
+  @apply bg-indigo-950;
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 18px;
+}
+
+/* In your CSS file or Tailwind CSS configuration */
+.animate-item {
+  animation: example-animation 1s ease-in-out;
+}
+
+@keyframes example-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.bg-indigo-950 {
+  background: linear-gradient(
+    120deg,
+    rgb(158, 116, 63) 60%,
+    rgb(149, 74, 46) 88%,
+    rgb(220, 93, 46) 40%,
+    rgba(255, 127, 80, 0.603) 48%
+  );
+}
+.bg-indigo-900 {
+  background-color: #e9c874;
+}
+
+@media screen and (max-width: 2299px) {
+  body {
+    font-size: 17pt;
+  }
+}
+
+@media screen and (max-width: 2099px) {
+  body {
+    font-size: 16pt;
+  }
+}
+
+@media screen and (max-width: 1899px) {
+  body {
+    font-size: 15pt;
+  }
+}
+
+@media screen and (max-width: 1699px) {
+  body {
+    font-size: 14pt;
+  }
+}
+
+@media screen and (max-width: 1499px) {
+  body {
+    font-size: 10pt;
+  }
+}
+
+@media screen and (max-width: 1299px) and (orientation: portrait) {
+  body {
+    font-size: 8pt;
+  }
+}
+@media screen and (max-width: 1099px) and (orientation: portrait) {
+  body {
+    font-size: 7pt;
+  }
+}
+
+@media screen and (max-width: 899px) and (orientation: portrait) {
+  body {
+    font-size: 6pt;
+  }
+}
+@media screen and (max-width: 699px) and (orientation: portrait) {
+  body {
+    font-size: 5pt;
+  }
+}
+
+@media screen and (max-width: 499px) and (orientation: portrait) {
+  body {
+    font-size: 4pt;
+  }
+}
