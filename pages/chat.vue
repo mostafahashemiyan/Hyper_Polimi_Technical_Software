@@ -69,6 +69,7 @@ import predefinedResponses from "~/responses.json"; // Import the predefined JSO
 const userInput = ref("");
 const messages = ref([]);
 const showChatbot = ref(false);
+const error = ref("");
 
 // Access the sendMessage function provided by the openai.js plugin
 const { $sendMessage } = useNuxtApp();
@@ -103,12 +104,19 @@ const sendMessageToBot = async () => {
       return;
     }
   } else {
-    const botMessage = {
-      id: Date.now() + 1,
-      text: "Sorry, I don't understand that question.",
-      user: false,
-    };
-    messages.value.push(botMessage);
+    try {
+      const botResponse = await $sendMessage(userInput.value);
+      const botMessage = {
+        id: Date.now() + 1,
+        text: botResponse,
+        user: false,
+      };
+      messages.value.push(botMessage);
+      error.value = ""; // Clear any previous error messages
+    } catch (err) {
+      error.value = "An error occurred while communicating with the chatbot. Please try again later.";
+      console.error(err);
+    }
   }
 
   userInput.value = "";
@@ -122,6 +130,61 @@ const clearChat = () => {
   messages.value = [];
 };
 </script>
+
+<script>
+import { ref } from "vue";
+
+export default {
+  name: "ChatBot",
+  props: {
+    showChat: {
+      type: Boolean,
+      required: true,
+    },
+  },
+  setup() {
+    const messages = ref([]);
+    const userInput = ref("");
+    const error = ref("");
+
+    const sendMessageToBot = async () => {
+      if (userInput.value.trim() === "") return;
+
+      const userMessage = {
+        content: userInput.value,
+        user: true,
+      };
+
+      messages.value.push(userMessage);
+      const input = userInput.value;
+      userInput.value = "";
+
+      try {
+        const { $sendMessage } = useNuxtApp();
+        const botResponse = await $sendMessage(input);
+        const botMessage = {
+          content: botResponse,
+          user: false,
+        };
+
+        messages.value.push(botMessage);
+        error.value = ""; // Clear any previous error messages
+      } catch (err) {
+        error.value = "An error occurred while communicating with the chatbot. Please try again later.";
+        console.error(err);
+      }
+    };
+
+    return {
+      userInput,
+      messages,
+      sendMessageToBot,
+      error,
+    };
+  },
+};
+</script>
+
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Zilla+Slab:wght@400;700&display=swap");
